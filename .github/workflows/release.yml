@@ -22,6 +22,12 @@ jobs:
             exit 1
           fi
 
+      - name: Print GITHUB_ACTOR
+        run: echo "GITHUB_ACTOR is $GITHUB_ACTOR"
+ 
+      - name: Print GITHUB_REPOSITORY_OWNER
+        run: echo "GITHUB_REPOSITORY_OWNER is $GITHUB_REPOSITORY_OWNER"
+
       - name: Checkout
         uses: actions/checkout@v4
         with:
